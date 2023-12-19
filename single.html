@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+
+    <!-- product  header -->
+    <header class="w-full lg:py-6 py-3  flex  flex-col items-center product-header">
+        <!-- top section -->
+        <div class="header-container lg:flex justify-between hidden">
+            <!-- logo and search box -->
+            <div class="right-side flex items-center ">
+                <div class="logo ml-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="140" height="54" viewBox="0 0 140 54" fill="none">
+                        <g clip-path="url(#clip0_186_3273)">
+                            <path
+                                d="M104.437 0.521725C96.0342 1.84039 91.1582 3.89505 85.5156 8.49503C84.5956 9.26169 83.7676 9.78303 83.6449 9.66036C83.5529 9.56836 83.3996 8.6177 83.3382 7.57503C83.2462 6.19504 83.3689 5.24438 83.8289 4.07905L84.4422 2.48438L83.3076 2.94438C75.9169 6.04171 69.569 11.9297 66.6556 18.4923L66.1036 19.6883L67.5756 18.4617C68.373 17.787 69.8143 16.7443 70.765 16.131C72.5743 14.9963 76.7143 13.187 77.5423 13.187C77.8796 13.187 78.1249 14.0457 78.5236 16.6217C79.3209 22.019 79.1369 21.7737 80.8236 19.4123C83.1849 16.039 86.5582 12.3897 89.2262 10.243C92.3849 7.6977 98.0275 4.87638 102.137 3.77238C105.02 3.00572 105.602 2.94438 111.643 2.94438C117.194 2.97505 118.39 3.06705 120.445 3.61905C126.639 5.30571 131.301 8.1577 136.667 13.4937C140.194 16.9897 140.194 16.499 136.637 12.4204C133.754 9.04703 128.265 4.84571 124.769 3.34305C119.647 1.10439 115.538 0.307058 109.497 0.337725C107.136 0.368393 104.866 0.460392 104.437 0.521725Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M126.333 18.2163C124.339 19.075 123.389 21.5896 123.481 25.6683L123.542 27.9683L126.179 25.3309L128.817 22.6936H133.325H137.833L138.17 20.915C138.354 19.9643 138.599 18.8603 138.691 18.4616L138.845 17.787H133.079C128.909 17.8176 127.007 17.9403 126.333 18.2163Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M36.0504 34.0401V42.9334H29.1505H22.2505V40.1734V37.4134H26.1758H30.0704L31.3891 34.9601L32.7078 32.5068H23.5385C15.9945 32.5068 14.3078 32.5681 14.1852 32.9361C13.9398 33.5494 14.5838 34.0401 15.6878 34.0401C17.0985 34.0401 17.8958 35.0214 17.2212 35.9414C17.2212 35.9721 14.4918 36.0641 11.2105 36.1561C6.18119 36.3094 5.23053 36.4014 5.23053 36.8001C5.23053 37.1681 5.9052 37.2907 8.72652 37.4134C11.5478 37.5361 12.2838 37.6587 12.5292 38.0881C12.7745 38.4561 12.7438 38.7321 12.4678 39.0694C12.1612 39.4374 11.4558 39.5601 9.46252 39.5601C6.94786 39.5601 6.88653 39.5907 6.97852 40.2347C7.07052 40.9094 7.19319 40.9401 10.6585 41.0321C13.5718 41.0934 14.2465 41.1854 14.3998 41.6147C14.8598 42.8107 14.1545 42.9334 7.56119 42.9334C1.18254 42.9334 0.323881 43.0867 0.691879 44.0374C0.814546 44.3747 1.73454 44.4667 4.8932 44.4667C7.10119 44.4667 9.09452 44.5894 9.30918 44.7427C9.55452 44.896 9.67718 45.264 9.61585 45.5707C9.52385 46.0307 9.09452 46.2147 7.37719 46.46C5.8132 46.6747 5.23053 46.8894 5.23053 47.2267C5.23053 47.6254 7.86786 47.6867 26.7891 47.7787C50.5557 47.84 49.3904 47.932 50.8317 45.9387C51.5064 44.9574 51.537 44.6507 51.629 38.7014L51.721 32.5068H49.1144H46.4771V37.7201V42.9334H43.8704H41.2637V34.0401V25.1468H38.6571H36.0504V34.0401Z"
+                                fill="#EF3F40" />
+                            <path d="M57.517 27.1402V29.1335H63.1903H68.8636V27.1402V25.1469H63.1903H57.517V27.1402Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M76.9903 34.1014V43.0867L74.3223 43.1787L71.6236 43.2707V37.8734V32.5068H69.109H66.5637V37.7814V43.0867L63.8957 43.1787L61.197 43.2707V38.0268V32.8134H58.7437H56.2904V37.9348V43.0561L53.745 45.6014L51.1997 48.1467H54.0517C55.7997 48.1467 57.3024 47.9934 57.9157 47.7174C59.2343 47.1654 60.5837 45.7547 60.7983 44.7121C61.105 43.1174 61.5037 43.8227 61.5037 46.0001V48.1467H74.9356H88.3676L89.9009 47.3801C92.5076 46.0921 92.4769 46.2454 92.4769 34.9908V25.1468H90.0236H87.5703V34.0401V42.9334H84.8103H82.0503V34.0401V25.1468H79.5356H76.9903V34.1014Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M95.2369 36.6468V48.1467H96.4023C97.9663 48.1467 98.9783 47.5641 99.5916 46.3067C100.082 45.3561 100.144 44.1294 100.144 35.1748V25.1468H97.6903H95.2369V36.6468Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M103.517 34.5615C103.517 45.1721 103.548 45.2641 105.756 47.0428C106.921 47.9628 107.013 47.9935 110.815 48.0855C114.373 48.1775 114.833 48.1161 116.09 47.4721C116.857 47.0735 117.777 46.3068 118.145 45.7241C118.819 44.7428 118.85 44.4055 118.85 38.6095V32.5068H116.397H113.943V37.7202V42.9335H111.183H108.423V34.0402V25.1469H105.97H103.517V34.5615Z"
+                                fill="#EF3F40" />
+                            <path d="M109.957 27.2935V29.4402H114.403H118.85V27.2935V25.1469H114.403H109.957V27.2935Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M130.81 36.6468V48.1467H131.883C133.355 48.1467 134.459 47.5641 135.042 46.4907C135.502 45.6627 135.563 44.1907 135.655 35.3281L135.747 25.1468H133.294H130.81V36.6468Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M123.45 37.9349V43.0868L120.935 45.6322L118.39 48.1775L121.794 48.0855C124.983 47.9935 125.259 47.9322 126.333 47.1042C128.357 45.5708 128.663 44.4975 128.663 38.2415V32.8135H126.057H123.45V37.9349Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M38.2584 51.5814L38.3504 53.5134L43.9624 53.6054L49.5437 53.6667V51.6734V49.6801H43.8704H38.1664L38.2584 51.5814Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M67.0237 51.1827C67.0237 51.8574 67.177 52.5014 67.3303 52.5934C67.5143 52.716 67.637 52.2254 67.637 51.3974C67.637 50.6307 67.5143 49.9867 67.3303 49.9867C67.177 49.9867 67.0237 50.5387 67.0237 51.1827Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M81.1302 51.3974C81.1302 52.2254 81.2529 52.716 81.4369 52.5934C81.8049 52.3787 81.7436 49.9867 81.3756 49.9867C81.2529 49.9867 81.1302 50.6307 81.1302 51.3974Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M88.7969 51.3974C88.7969 52.2254 88.9195 52.716 89.1035 52.5934C89.4715 52.3787 89.4102 49.9867 89.0422 49.9867C88.9195 49.9867 88.7969 50.6307 88.7969 51.3974Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M57.7011 50.5388C57.4864 50.9068 57.9464 52.5322 58.3144 52.6548C58.4984 52.7162 58.6211 52.2868 58.6211 51.6428C58.5597 50.5388 58.0691 49.9562 57.7011 50.5388Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M75.9782 50.5388C75.4876 50.8761 75.9782 52.5628 76.6222 52.6854C76.8982 52.7468 77.1436 52.6548 77.1436 52.4708C77.1436 52.2868 77.0209 52.1334 76.8369 52.1334C76.4076 52.1334 76.4382 51.3054 76.8676 51.1521C77.0822 51.0908 77.0516 50.9068 76.7756 50.6921C76.5609 50.4774 76.1929 50.4161 75.9782 50.5388Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M51.997 50.9068C51.629 51.1521 51.6903 51.2134 52.3037 51.2134L53.0703 51.2441L52.365 51.5508C51.4143 51.9188 51.6597 52.5934 52.7023 52.5934C53.4077 52.6241 53.5303 52.5014 53.5303 51.7961C53.5303 51.3361 53.3157 50.9068 53.0397 50.7841C52.457 50.5694 52.549 50.5388 51.997 50.9068Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M55.217 50.8453C54.941 51.1213 55.0637 52.4093 55.3703 52.5933C55.5543 52.6853 55.677 52.5013 55.677 52.164C55.677 51.8267 55.8303 51.4587 55.9837 51.3667C56.1677 51.2747 56.2903 51.06 56.2903 50.9373C56.2903 50.692 55.4623 50.6 55.217 50.8453Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M60.5837 50.9068C60.2157 51.1521 60.277 51.2134 60.8903 51.2134L61.657 51.2441L60.9517 51.5508C60.001 51.9188 60.2463 52.5934 61.289 52.5934C61.9943 52.6241 62.117 52.5014 62.117 51.7961C62.117 51.3361 61.9023 50.9068 61.6263 50.7841C61.0437 50.5694 61.1357 50.5388 60.5837 50.9068Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M64.049 50.8147C63.5276 50.9987 63.5583 51.9801 64.0796 52.4094C64.693 52.9001 65.4903 52.5014 65.4903 51.6734C65.4903 51.1214 64.8156 50.4467 64.4783 50.6307C64.4476 50.6307 64.233 50.7227 64.049 50.8147ZM65.0916 52.0107C64.9996 52.1027 64.7236 52.1334 64.509 52.0414C64.2636 51.9494 64.3556 51.8574 64.693 51.8574C65.0303 51.8267 65.2143 51.9187 65.0916 52.0107Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M69.4464 51.0908C68.9864 51.6428 69.385 52.5321 70.213 52.6854C70.949 52.8388 71.409 51.4894 70.765 50.9681C70.121 50.4775 69.937 50.5081 69.4464 51.0908ZM70.6117 52.0108C70.5197 52.1028 70.2437 52.1334 70.029 52.0414C69.7837 51.9494 69.8757 51.8574 70.213 51.8574C70.5503 51.8268 70.7343 51.9188 70.6117 52.0108Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M72.8503 51.06C72.5436 51.428 72.5129 51.704 72.7583 52.072C73.1263 52.6854 74.1383 52.7467 74.3223 52.164C74.4143 51.888 74.2916 51.8267 73.8009 51.98C73.3103 52.1334 73.1569 52.0414 73.1569 51.6734C73.1569 51.2747 73.3409 51.1827 73.8009 51.3054C74.1996 51.3974 74.3836 51.336 74.2916 51.1214C74.1076 50.5387 73.2796 50.5387 72.8503 51.06Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M78.4623 51.0907C78.2476 51.6734 78.4623 52.4707 78.8303 52.4401C79.0143 52.4094 79.1063 52.2254 79.0449 51.9801C79.0143 51.7654 79.1063 51.4894 79.2903 51.3667C79.7503 51.0907 79.6583 50.6921 79.1063 50.6921C78.8303 50.6921 78.5543 50.8761 78.4623 51.0907Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M83.6756 50.8147C83.1236 51.0294 83.185 52.348 83.737 52.5627C84.289 52.7773 85.117 52.4707 85.117 52.072C85.117 51.9187 84.841 51.888 84.5036 51.98C84.0743 52.1334 83.8903 52.0414 83.8903 51.6734C83.8903 51.3054 84.0743 51.2134 84.5036 51.3667C85.2396 51.5814 85.3316 51.06 84.6263 50.784C84.3503 50.692 84.1356 50.6 84.105 50.6307C84.0743 50.6307 83.8596 50.7227 83.6756 50.8147Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M90.9436 51.7348C90.9436 52.2868 91.0969 52.7468 91.2503 52.7468C91.4343 52.7468 91.5569 52.4708 91.5569 52.1642C91.5569 51.8268 91.7103 51.4588 91.8636 51.3668C92.3543 51.0602 92.2009 50.7228 91.5569 50.7228C91.0663 50.7228 90.9436 50.9375 90.9436 51.7348Z"
+                                fill="#EF3F40" />
+                            <path
+                                d="M86.497 52.4401C86.6196 52.6241 86.8343 52.6855 86.9876 52.5935C87.417 52.3175 87.325 52.1335 86.773 52.1335C86.5276 52.1335 86.405 52.2868 86.497 52.4401Z"
+                                fill="#EF3F40" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_186_3273">
+                                <rect width="140" height="54" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="search-container py-3 px-6 flex relative">
+                    <div class="ml-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M21 21L16.65 16.65M11 6C13.7614 6 16 8.23858 16 11M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                                stroke="#BFBFBF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <form class="w-full">
+                        <input type="text" class="w-full input-search"
+                            placeholder="برند یا محصول مورد نظر خود را جستجو کنید...">
+                    </form>
+                    <!-- dot loading for search Hidden   -->
+                    <div class="loading-dots hidden">
+                        <div class="loading-dots--dot"></div>
+                        <div class="loading-dots--dot"></div>
+                        <div class="loading-dots--dot"></div>
+                    </div>
+                    ‍ <div class="results-box results hidden">
+                        <div class="line mb-6"></div>
+                        <!-- step 1 -->
+                        <div>
+                            <div class="mb-6">
+                                <p class="mb-4 title">بیشترین عبارات جستجو شده</p>
+                                <ul class="flex">
+                                    <li class="tag px-3 mr-4">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                    <li class="tag px-3 mr-4">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                    <li class="tag px-3 mr-4">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                    <li class="tag px-3 mr-4">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                    <li class="tag px-3 mr-4">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-6">
+                                <div class="flex justify-between items-center mb-4">
+                                    <p class="title">محبوب‌ترین محصولات آرتا الکتریک</p>
+                                    <a href="#" class="flex all-result-link">
+                                        همه نتایج
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none" class="mr-1">
+                                            <path d="M12.5 15L7.5 10L12.5 5" stroke="#505F79" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div>
+                                    <div class="w-full flex card justify-between items-center mb-2">
+                                        <div class="image">
+                                            <img src="./assets/image/Thumbnail (4).png" alt="">
+                                        </div>
+                                        <div class="content flex items-center w-full ">
+                                            <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex card justify-between items-center mb-2">
+                                        <div class="image">
+                                            <img src="./assets/image/Thumbnail (4).png" alt="">
+                                        </div>
+                                        <div class="content flex items-center w-full ">
+                                            <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex card justify-between items-center mb-2">
+                                        <div class="image">
+                                            <img src="./assets/image/Thumbnail (4).png" alt="">
+                                        </div>
+                                        <div class="content flex items-center w-full ">
+                                            <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  Search successful  -->
+                        <div class="mb-6">
+                            <div class="flex justify-between items-center mb-4">
+                                <p class="title">نتایج جستجو</p>
+                                <a href="#" class="flex all-result-link">
+                                    همه نتایج
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none" class="mr-1">
+                                        <path d="M12.5 15L7.5 10L12.5 5" stroke="#505F79" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="w-full flex card justify-between items-center mb-2">
+                                    <div class="image">
+                                        <img src="./assets/image/Thumbnail (4).png" alt="">
+                                    </div>
+                                    <div class="content flex items-center w-full ">
+                                        <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                    </div>
+                                </div>
+                                <div class="w-full flex card justify-between items-center mb-2">
+                                    <div class="image">
+                                        <img src="./assets/image/Thumbnail (4).png" alt="">
+                                    </div>
+                                    <div class="content flex items-center w-full ">
+                                        <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                    </div>
+                                </div>
+                                <div class="w-full flex card justify-between items-center mb-2">
+                                    <div class="image">
+                                        <img src="./assets/image/Thumbnail (4).png" alt="">
+                                    </div>
+                                    <div class="content flex items-center w-full ">
+                                        <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Search failed -->
+                        <div class="failed">
+                            <div class="mb-6 block">
+                                <p class="mb-4 title">بیشترین عبارات جستجو شده</p>
+                                <ul class="flex">
+                                    <li class="tag px-3 mr-4">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                    <li class="tag px-3 mr-4">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                    <li class="tag px-3 mr-4">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                    <li class="tag px-3 mr-4">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                    <li class="tag px-3 mr-4">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="title mb-4">نتایج جستجو</p>
+                                <div class="flex flex-col items-center py-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                                            stroke="#7A869A" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="status">عبارت مورد نظر پیدا نشد!</p>
+                                </div>
+                            </div>
+                            <div class="mb-6   block">
+                                <div class="flex justify-between items-center mb-4">
+                                    <p class="title">جدیدترین‌ها</p>
+                                    <a href="#" class="flex all-result-link">
+                                        همه نتایج
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none" class="mr-1">
+                                            <path d="M12.5 15L7.5 10L12.5 5" stroke="#505F79" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div>
+                                    <div class="w-full flex card justify-between items-center mb-2">
+                                        <div class="image">
+                                            <img src="./assets/image/Thumbnail (4).png" alt="">
+                                        </div>
+                                        <div class="content flex items-center w-full ">
+                                            <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex card justify-between items-center mb-2">
+                                        <div class="image">
+                                            <img src="./assets/image/Thumbnail (4).png" alt="">
+                                        </div>
+                                        <div class="content flex items-center w-full ">
+                                            <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex card justify-between items-center mb-2">
+                                        <div class="image">
+                                            <img src="./assets/image/Thumbnail (4).png" alt="">
+                                        </div>
+                                        <div class="content flex items-center w-full ">
+                                            <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn-group flex items-center pl-2">
+                <a href="#">
+                    <div class="flex justify-center items-center px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M20 21C20 19.6044 20 18.9067 19.8278 18.3389C19.44 17.0605 18.4395 16.06 17.1611 15.6722C16.5933 15.5 15.8956 15.5 14.5 15.5H9.5C8.10444 15.5 7.40665 15.5 6.83886 15.6722C5.56045 16.06 4.56004 17.0605 4.17224 18.3389C4 18.9067 4 19.6044 4 21M16.5 7.5C16.5 9.98528 14.4853 12 12 12C9.51472 12 7.5 9.98528 7.5 7.5C7.5 5.01472 9.51472 3 12 3C14.4853 3 16.5 5.01472 16.5 7.5Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p class="mr-2 ">ورود | ثبت‌نام</p>
+                    </div>
+                </a>
+                <div class="line mx-2"></div>
+                <a href="#">
+                    <div class="flex justify-center items-center px-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M5.00014 14H18.1359C19.1487 14 19.6551 14 20.0582 13.8112C20.4134 13.6448 20.7118 13.3777 20.9163 13.0432C21.1485 12.6633 21.2044 12.16 21.3163 11.1534L21.9013 5.88835C21.9355 5.58088 21.9525 5.42715 21.9031 5.30816C21.8597 5.20366 21.7821 5.11697 21.683 5.06228C21.5702 5 21.4155 5 21.1062 5H4.50014M2 2H3.24844C3.51306 2 3.64537 2 3.74889 2.05032C3.84002 2.09463 3.91554 2.16557 3.96544 2.25376C4.02212 2.35394 4.03037 2.48599 4.04688 2.7501L4.95312 17.2499C4.96963 17.514 4.97788 17.6461 5.03456 17.7462C5.08446 17.8344 5.15998 17.9054 5.25111 17.9497C5.35463 18 5.48694 18 5.75156 18H19M7.5 21.5H7.51M16.5 21.5H16.51M8 21.5C8 21.7761 7.77614 22 7.5 22C7.22386 22 7 21.7761 7 21.5C7 21.2239 7.22386 21 7.5 21C7.77614 21 8 21.2239 8 21.5ZM17 21.5C17 21.7761 16.7761 22 16.5 22C16.2239 22 16 21.7761 16 21.5C16 21.2239 16.2239 21 16.5 21C16.7761 21 17 21.2239 17 21.5Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <!-- nav -->
+        <div class="header-container mt-6 lg:block hidden ">
+            <nav class="my-4 relative">
+                <ul class="flex desktop">
+                    <!-- mega menu -->
+                    <li class="mr-6 meun-item-1 ">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                fill="none">
+                                <path
+                                    d="M11.8889 5.26672V1.66672C11.8889 1.43097 11.7953 1.20488 11.6286 1.03818C11.4619 0.871483 11.2358 0.777832 11.0001 0.777832C10.7643 0.777832 10.5382 0.871483 10.3715 1.03818C10.2048 1.20488 10.1112 1.43097 10.1112 1.66672V5.26672C7.56537 5.49098 5.19568 6.65989 3.46839 8.54346C1.74111 10.427 0.781296 12.8889 0.777832 15.4445V15.8889C0.777832 16.1247 0.871483 16.3508 1.03818 16.5175C1.20488 16.6842 1.43097 16.7778 1.66672 16.7778H5.74672C5.95452 18.0209 6.59642 19.1501 7.55829 19.9645C8.52017 20.779 9.73969 21.2259 11.0001 21.2259C12.2604 21.2259 13.4799 20.779 14.4418 19.9645C15.4037 19.1501 16.0456 18.0209 16.2534 16.7778H20.3334C20.5691 16.7778 20.7952 16.6842 20.9619 16.5175C21.1286 16.3508 21.2223 16.1247 21.2223 15.8889V15.4445C21.2188 12.8889 20.259 10.427 18.5317 8.54346C16.8044 6.65989 14.4347 5.49098 11.8889 5.26672ZM11.0001 19.4445C10.212 19.4436 9.44657 19.1813 8.82358 18.6987C8.2006 18.2162 7.75528 17.5406 7.55739 16.7778H14.4427C14.2448 17.5406 13.7995 18.2162 13.1765 18.6987C12.5535 19.1813 11.7881 19.4436 11.0001 19.4445ZM15.4445 15.0001H2.56717C2.68029 12.8399 3.6181 10.8055 5.18716 9.3164C6.75623 7.82736 8.8369 6.99723 11.0001 6.99723C13.1632 6.99723 15.2439 7.82736 16.8129 9.3164C18.382 10.8055 19.3198 12.8399 19.4329 15.0001H15.4445Z"
+                                    fill="#00091A" />
+                            </svg>
+                            <p class="mr-2">روشنایی و نورپردازی</p>
+                        </div>
+                        <div class="arrow">
+                        </div>
+                        <div class="mega-menu">
+                            <div class="menu">
+                                <!-- 3 step -->
+                                <div class="menu-content">
+                                    <p>زیر مجموعه لایه دوم</p>
+                                    <div class="sub-menu">
+                                        <div class="sub-menu-product">
+                                            <div class="title">
+                                                <p>همه محصولات چراغ سقفی</p>
+                                            </div>
+                                            <!-- product container -->
+                                            <div class="product-container">
+                                                <div class="product-card">
+                                                    <a href="#">
+                                                        <div class="header-card">
+                                                            <img src="./assets/image/image 1.png" alt="iamge">
+                                                        </div>
+                                                        <div class="body-card">
+                                                            <p>چراغ تزیینی آویز و لوستر</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="product-card">
+                                                    <a href="#">
+                                                        <div class="header-card">
+                                                            <img src="./assets/image/image 1.png" alt="iamge">
+                                                        </div>
+                                                        <div class="body-card">
+                                                            <p>چراغ تزیینی آویز و لوستر</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="product-card">
+                                                    <a href="#">
+                                                        <div class="header-card">
+                                                            <img src="./assets/image/image 1.png" alt="iamge">
+                                                        </div>
+                                                        <div class="body-card">
+                                                            <p>چراغ تزیینی آویز و لوستر</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="product-card">
+                                                    <a href="#">
+                                                        <div class="header-card">
+                                                            <img src="./assets/image/image 1.png" alt="iamge">
+                                                        </div>
+                                                        <div class="body-card">
+                                                            <p>چراغ تزیینی آویز و لوستر</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="product-card">
+                                                    <a href="#">
+                                                        <div class="header-card">
+                                                            <img src="./assets/image/image 1.png" alt="iamge">
+                                                        </div>
+                                                        <div class="body-card">
+                                                            <p>چراغ تزیینی آویز و لوستر</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="product-card">
+                                                    <a href="#">
+                                                        <div class="header-card">
+                                                            <img src="./assets/image/image 1.png" alt="iamge">
+                                                        </div>
+                                                        <div class="body-card">
+                                                            <p>چراغ تزیینی آویز و لوستر</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="product-card">
+                                                    <a href="#">
+                                                        <div class="header-card">
+                                                            <img src="./assets/image/image 1.png" alt="iamge">
+                                                        </div>
+                                                        <div class="body-card">
+                                                            <p>چراغ تزیینی آویز و لوستر</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="product-card">
+                                                    <a href="#">
+                                                        <div class="header-card">
+                                                            <img src="./assets/image/image 1.png" alt="iamge">
+                                                        </div>
+                                                        <div class="body-card">
+                                                            <p>چراغ تزیینی آویز و لوستر</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="product-card">
+                                                    <a href="#">
+                                                        <div class="header-card">
+                                                            <img src="./assets/image/image 1.png" alt="iamge">
+                                                        </div>
+                                                        <div class="body-card">
+                                                            <p>چراغ تزیینی آویز و لوستر</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="product-card">
+                                                    <a href="#">
+                                                        <div class="header-card">
+                                                            <img src="./assets/image/image 1.png" alt="iamge">
+                                                        </div>
+                                                        <div class="body-card">
+                                                            <p>چراغ تزیینی آویز و لوستر</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="product-card">
+                                                    <a href="#">
+                                                        <div class="header-card">
+                                                            <img src="./assets/image/image 1.png" alt="iamge">
+                                                        </div>
+                                                        <div class="body-card">
+                                                            <p>چراغ تزیینی آویز و لوستر</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <!-- Last card -->
+                                                <div class="product-card">
+                                                    <a href="#">
+                                                        <div class="header-card">
+                                                            <img src="./assets/image/dots-horizontal.svg" alt="iamge">
+                                                        </div>
+                                                        <div class="body-card">
+                                                            <p>مشاهده بیشتر</p>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 4 step -->
+                                <div class="menu-content">
+                                    <p>زیر مجموعه لایه دوم</p>
+                                    <div class="sub-menu">
+                                        <div class="sub-menu-content">
+                                            <div class="box">
+                                                <p>زیر مجموعه لایه سوم</p>
+                                                <div class="sub-sub-menu">
+                                                    <div class="sub-sub-menu-product">
+                                                        <div class="title">
+                                                            <p>همه محصولات چراغ سقفی</p>
+                                                        </div>
+                                                        <!-- product container -->
+                                                        <div class="product-container">
+                                                            <div class="product-card">
+                                                                <a href="#">
+                                                                    <div class="header-card">
+                                                                        <img src="./assets/image/image 1.png"
+                                                                            alt="iamge">
+                                                                    </div>
+                                                                    <div class="body-card">
+                                                                        <p>چراغ تزیینی آویز و لوستر</p>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-card">
+                                                                <a href="#">
+                                                                    <div class="header-card">
+                                                                        <img src="./assets/image/image 1.png"
+                                                                            alt="iamge">
+                                                                    </div>
+                                                                    <div class="body-card">
+                                                                        <p>چراغ تزیینی آویز و لوستر</p>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-card">
+                                                                <a href="#">
+                                                                    <div class="header-card">
+                                                                        <img src="./assets/image/image 1.png"
+                                                                            alt="iamge">
+                                                                    </div>
+                                                                    <div class="body-card">
+                                                                        <p>چراغ تزیینی آویز و لوستر</p>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-card">
+                                                                <a href="#">
+                                                                    <div class="header-card">
+                                                                        <img src="./assets/image/image 1.png"
+                                                                            alt="iamge">
+                                                                    </div>
+                                                                    <div class="body-card">
+                                                                        <p>چراغ تزیینی آویز و لوستر</p>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-card">
+                                                                <a href="#">
+                                                                    <div class="header-card">
+                                                                        <img src="./assets/image/image 1.png"
+                                                                            alt="iamge">
+                                                                    </div>
+                                                                    <div class="body-card">
+                                                                        <p>چراغ تزیینی آویز و لوستر</p>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-card">
+                                                                <a href="#">
+                                                                    <div class="header-card">
+                                                                        <img src="./assets/image/image 1.png"
+                                                                            alt="iamge">
+                                                                    </div>
+                                                                    <div class="body-card">
+                                                                        <p>چراغ تزیینی آویز و لوستر</p>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-card">
+                                                                <a href="#">
+                                                                    <div class="header-card">
+                                                                        <img src="./assets/image/image 1.png"
+                                                                            alt="iamge">
+                                                                    </div>
+                                                                    <div class="body-card">
+                                                                        <p>چراغ تزیینی آویز و لوستر</p>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <div class="product-card">
+                                                                <a href="#">
+                                                                    <div class="header-card">
+                                                                        <img src="./assets/image/image 1.png"
+                                                                            alt="iamge">
+                                                                    </div>
+                                                                    <div class="body-card">
+                                                                        <p>چراغ تزیینی آویز و لوستر</p>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                            <!-- Last card -->
+                                                            <div class="product-card">
+                                                                <a href="#">
+                                                                    <div class="header-card">
+                                                                        <img src="./assets/image/dots-horizontal.svg"
+                                                                            alt="iamge">
+                                                                    </div>
+                                                                    <div class="body-card">
+                                                                        <p>مشاهده بیشتر</p>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="box">
+                                                <p>زیر مجموعه لایه سوم</p>
+                                            </div>
+                                            <div class="box">
+                                                <p>زیر مجموعه لایه سوم</p>
+                                            </div>
+                                            <div class="box">
+                                                <p>زیر مجموعه لایه سوم</p>
+                                            </div>
+                                            <div class="box">
+                                                <p>زیر مجموعه لایه سوم</p>
+                                            </div>
+                                            <div class="box">
+                                                <p>زیر مجموعه لایه سوم</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="menu-content">
+                                    <p>زیر مجموعه لایه دوم</p>
+                                </div>
+                                <div class="menu-content">
+                                    <p>زیر مجموعه لایه دوم</p>
+                                </div>
+                                <div class="menu-content">
+                                    <p>زیر مجموعه لایه دوم</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="mr-6 meun-item-1 flex">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="24" viewBox="0 0 22 24" fill="none">
+                            <path
+                                d="M12.4001 8.79997C13.0801 8.79997 13.6001 8.27998 13.6001 7.59997V3.2C13.6001 2.51998 13.0801 2 12.4001 2H3.60002C2.92001 2 2.40002 2.51998 2.40002 3.2V7.60002C2.40002 8.28003 2.92001 8.80001 3.60002 8.80001L12.4001 8.79997ZM3.20004 7.59997V3.2C3.20004 2.99998 3.40006 2.80002 3.60002 2.80002H12.4C12.64 2.80002 12.8 2.96 12.8 3.2V7.60002C12.8 7.84002 12.64 8 12.4 8H3.60002C3.36002 8 3.20004 7.83997 3.20004 7.59997ZM12.4001 14C12.4017 13.4217 12.2891 12.8488 12.0685 12.3142C11.848 11.7796 11.524 11.2939 11.115 10.885C10.7061 10.4761 10.2204 10.152 9.68583 9.93151C9.15124 9.71098 8.57833 9.59831 8.00004 9.59998C6.81021 9.59998 5.73462 10.0662 4.94468 10.8267C4.89816 10.8581 4.85813 10.8981 4.82679 10.9446C4.06624 11.7346 3.60002 12.8101 3.60002 14C3.60002 16.44 5.60004 18.4 8.00004 18.4C8.57833 18.4017 9.15124 18.289 9.68582 18.0685C10.2204 17.8479 10.7061 17.5239 11.115 17.115C11.5239 16.7061 11.848 16.2204 12.0685 15.6858C12.289 15.1512 12.4017 14.5783 12.4001 14ZM11.6 14C11.6 14.8562 11.3062 15.6385 10.8139 16.2538L5.7462 11.1861C6.36162 10.6939 7.14392 10.4 8.00004 10.4C10.0001 10.4 11.6 12 11.6 14ZM4.40004 14C4.40004 13.1438 4.6939 12.3615 5.18618 11.7462L10.2539 16.8139C9.63851 17.3062 8.85621 17.6 8.00009 17.6C6.00002 17.6 4.40004 16 4.40004 14Z"
+                                fill="#00091A" />
+                            <path
+                                d="M20.8 8.06452V7.2C20.8 6.96 20.64 6.80002 20.4 6.80002C20.16 6.80002 20 6.96 20 7.2V8.06452C19.5264 8.22347 19.2 8.66142 19.2 9.20002V12C19.2 12.24 19.36 12.4 19.6 12.4H20V22C20 22.68 19.48 23.2 18.8 23.2H7.60002C6.92001 23.2 6.40002 22.68 6.40002 22V20.4H9.60004V21.2C9.60004 21.88 10.12 22.4 10.8 22.4H16.4C17.08 22.4 17.6 21.88 17.6 21.2V12.4H18C18.24 12.4 18.4 12.24 18.4 12V9.20002C18.4 8.66138 18.0736 8.22347 17.6 8.06452V7.2C17.6 6.96 17.44 6.80002 17.2 6.80002C16.96 6.80002 16.8 6.96 16.8 7.2V8.06452C16.3264 8.22347 16 8.66142 16 9.20002V12C16 12.24 16.16 12.4 16.4 12.4H16.7999V21.2C16.7999 21.44 16.64 21.6 16.4 21.6H10.8C10.56 21.6 10.4 21.44 10.4 21.2V20.4H10.96C13.52 20.4 15.6 18.44 15.6 16V15.92C14.6 10.96 14.56 9.36 15.36 4.44L15.6 3.27998V3.19997C15.6 1.44 14.08 0 12.24 0H3.76002C1.92004 0 0.400024 1.44 0.400024 3.20002V3.28003L0.640024 4.44005C1.44004 9.20006 1.44004 10.72 0.400024 15.9201V16.0001C0.400024 18.4401 2.48001 20.4001 5.04004 20.4001H5.60001V22.0001C5.60001 23.1201 6.47999 24.0001 7.60002 24.0001H18.8C19.92 24.0001 20.8 23.1201 20.8 22.0001V12.4001H21.2C21.44 12.4001 21.6 12.2401 21.6 12.0001V9.20011C21.6 8.66138 21.2736 8.22342 20.8 8.06452ZM16.8 9.20002C16.8 8.96002 16.96 8.80003 17.2 8.80003C17.44 8.80003 17.6 8.96002 17.6 9.20002V11.6H16.7999V9.20002H16.8ZM1.19999 16.04C2.20002 10.76 2.24001 9.12 1.40001 4.28002L1.19999 3.16003C1.23998 1.84003 2.36001 0.800016 3.75998 0.800016H12.24C13.64 0.800016 14.8 1.84003 14.8 3.16003L14.6 4.28002C13.76 9.32001 13.8 11 14.8 16.04C14.76 18 13.08 19.6 10.96 19.6H5.03999C2.96001 19.6 1.24002 18 1.19999 16.04ZM20.8 11.6H20V9.20002C20 8.96002 20.16 8.80003 20.4 8.80003C20.64 8.80003 20.8 8.96002 20.8 9.20002L20.8 11.6Z"
+                                fill="#00091A" />
+                            <path
+                                d="M4.39996 7.2001H5.99994C6.23994 7.2001 6.39992 7.04011 6.39992 6.80011C6.39992 6.56011 6.23994 6.40013 5.99994 6.40013H4.79994C4.79994 6.16013 4.95993 6.00014 5.19993 6.00014C5.87994 6.00014 6.39992 5.48016 6.39992 4.80014C6.39992 4.12013 5.87994 3.60014 5.19993 3.60014C4.51991 3.60014 3.99992 4.12013 3.99992 4.80014C3.99992 5.04014 4.15991 5.20013 4.39991 5.20013C4.63991 5.20013 4.79989 5.04014 4.79989 4.80014C4.79989 4.56014 4.95988 4.40016 5.19988 4.40016C5.43988 4.40016 5.59986 4.56014 5.59986 4.80014C5.59986 5.04014 5.43988 5.20013 5.19988 5.20013C4.51986 5.20013 3.99988 5.72011 3.99988 6.40013V6.80011C3.99997 7.04011 4.15996 7.2001 4.39996 7.2001ZM7.19994 7.2001H8.79992C9.03993 7.2001 9.19991 7.04011 9.19991 6.80011C9.19991 6.56011 9.03993 6.40013 8.79992 6.40013H7.59993C7.59993 6.16013 7.75991 6.00014 7.99991 6.00014C8.67992 6.00014 9.19991 5.48016 9.19991 4.80014C9.19991 4.12013 8.67992 3.60014 7.99991 3.60014C7.31989 3.60014 6.79991 4.12013 6.79991 4.80014C6.79991 5.04014 6.95989 5.20013 7.19989 5.20013C7.43989 5.20013 7.59988 5.04014 7.59988 4.80014C7.59988 4.56014 7.75986 4.40016 7.99986 4.40016C8.23986 4.40016 8.39985 4.56014 8.39985 4.80014C8.39985 5.04014 8.23986 5.20013 7.99986 5.20013C7.31985 5.20013 6.79986 5.72011 6.79986 6.40013V6.80011C6.79996 7.04011 6.95994 7.2001 7.19994 7.2001ZM10.4399 7.2001H11.12C11.6 7.2001 11.9999 6.80011 11.9999 6.3601V4.48008C11.9999 4.00008 11.6 3.6001 11.1599 3.6001H10.4799C9.99993 3.6001 9.59994 4.00008 9.59994 4.4401V6.32011C9.59994 6.80011 9.99997 7.2001 10.4399 7.2001ZM10.4 4.48008C10.4 4.4401 10.4399 4.40007 10.48 4.40007H11.16C11.2 4.40007 11.24 4.44005 11.24 4.48008V6.3601C11.24 6.40008 11.2 6.44011 11.16 6.44011H10.48C10.44 6.44011 10.4 6.40013 10.4 6.3601V4.48008Z"
+                                fill="#00091A" />
+                        </svg>
+                        <p class="mr-2">لوازم الکتریکی</p>
+
+                    </li>
+                    <li class="mr-6 meun-item-1 flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="23" viewBox="0 0 16 23" fill="none">
+                            <path
+                                d="M14.4584 7.61103C14.2856 7.20115 14.0146 6.84009 13.6693 6.55967C13.324 6.27925 12.915 6.08809 12.4784 6.00303L11.8352 5.87823C11.5197 5.81646 11.1991 5.78432 10.8776 5.78223L10.892 5.77263C11.492 5.31903 11.8304 4.69983 11.8424 4.02543C11.8544 3.35103 11.5424 2.71743 10.9616 2.24223L10.2872 1.69263C10.2872 1.69263 10.268 1.67823 10.256 1.67103C9.88427 1.42699 9.45812 1.27831 9.01525 1.23813C8.57238 1.19794 8.12642 1.26749 7.71682 1.44063C7.30695 1.61345 6.94589 1.88445 6.66547 2.22974C6.38505 2.57504 6.19388 2.98402 6.10882 3.42063L5.98402 4.06383C5.92226 4.37934 5.89012 4.69993 5.88802 5.02143L5.87842 5.00703C5.42722 4.40703 4.80562 4.06863 4.13122 4.05663H4.09042C3.43042 4.05663 2.81362 4.36863 2.34802 4.93983L1.79842 5.61423C1.79842 5.61423 1.78402 5.63343 1.77682 5.64543C1.28002 6.40143 1.19362 7.35183 1.54642 8.18703C1.89922 9.02223 2.63842 9.62223 3.52642 9.79503L4.16962 9.91983C4.49842 9.98463 4.82002 10.0134 5.12722 10.0158L5.11522 10.0254C4.51522 10.479 4.17682 11.0982 4.16482 11.7726C4.15282 12.447 4.46482 13.0806 5.04562 13.5558L5.72002 14.1054C5.72002 14.1054 5.73922 14.1198 5.75122 14.127C6.1923 14.4172 6.70884 14.5716 7.23682 14.571C7.59442 14.571 7.95202 14.5014 8.29042 14.3574C9.12322 14.0046 9.72562 13.2654 9.89842 12.3774L10.0232 11.7342C10.088 11.4054 10.1168 11.0838 10.1192 10.7766L10.1288 10.791C10.58 11.391 11.2016 11.7294 11.876 11.7414H11.9168C12.5768 11.7414 13.1936 11.4294 13.6592 10.8582L14.2088 10.1838C14.2088 10.1838 14.2232 10.1646 14.2304 10.1526C14.475 9.78111 14.624 9.35492 14.6642 8.91194C14.7044 8.46895 14.6345 8.0229 14.4608 7.61343L14.4584 7.61103ZM6.68722 4.20063L6.81202 3.55743C6.94162 2.89503 7.37122 2.36463 7.99282 2.10303C8.24722 1.99503 8.51122 1.94223 8.77282 1.94223C9.14482 1.94223 9.51442 2.05023 9.84322 2.26143L10.5032 2.79903C10.9112 3.13263 11.1296 3.56223 11.12 4.01103C11.1104 4.45983 10.8752 4.87983 10.4552 5.19663L9.85522 5.65023C9.5243 5.89848 9.16692 6.10936 8.78962 6.27903C8.55202 6.16143 8.28322 6.09423 8.00002 6.09423C7.60882 6.09423 7.24642 6.22143 6.94882 6.43503C6.67762 6.07983 6.48322 5.23743 6.68722 4.20063ZM9.08242 7.89663C9.07646 8.17975 8.9598 8.44927 8.75746 8.64739C8.55512 8.84551 8.28321 8.95647 8.00002 8.95647C7.71684 8.95647 7.44492 8.84551 7.24258 8.64739C7.04024 8.44927 6.92358 8.17975 6.91762 7.89663C6.92358 7.6135 7.04024 7.34399 7.24258 7.14586C7.44492 6.94774 7.71684 6.83678 8.00002 6.83678C8.28321 6.83678 8.55512 6.94774 8.75746 7.14586C8.9598 7.34399 9.07646 7.6135 9.08242 7.89663ZM4.30162 9.20943L3.65842 9.08463C2.99602 8.95503 2.46562 8.52543 2.20402 7.90383C1.94482 7.28703 2.00242 6.61503 2.36482 6.05343L2.90242 5.39343C3.23602 4.98543 3.66562 4.77423 4.11442 4.77663C4.56322 4.78623 4.98322 5.02143 5.30002 5.44143L5.75362 6.04143C6.01042 6.38223 6.22162 6.74943 6.38242 7.10703C6.26482 7.34463 6.19762 7.61343 6.19762 7.89663C6.19762 8.28783 6.32482 8.65023 6.53842 8.94783C6.18322 9.21903 5.34082 9.41103 4.30402 9.21183L4.30162 9.20943ZM9.31282 11.5926L9.18802 12.2358C9.05842 12.8982 8.62882 13.4286 8.00722 13.6902C7.39042 13.9494 6.71842 13.8918 6.15682 13.5318L5.49682 12.9942C5.08882 12.6606 4.87042 12.231 4.88002 11.7822C4.88962 11.3334 5.12482 10.9134 5.54482 10.5966L6.14482 10.143C6.48562 9.88623 6.85282 9.67503 7.21042 9.51423C7.44802 9.63183 7.71682 9.69903 8.00002 9.69903C8.39122 9.69903 8.75362 9.57183 9.05122 9.35823C9.32242 9.71343 9.51682 10.5558 9.31282 11.5926ZM13.6352 9.73743L13.0976 10.3974C12.7712 10.7958 12.3512 11.0142 11.912 11.0142H11.8856C11.4368 11.0046 11.0168 10.7694 10.7 10.3494L10.2464 9.74943C9.99817 9.4185 9.78728 9.06113 9.61762 8.68383C9.73522 8.44623 9.80242 8.17743 9.80242 7.89423C9.80242 7.50303 9.67522 7.14063 9.46162 6.84303C9.81682 6.57183 10.6592 6.37983 11.696 6.57903L12.3392 6.70383C13.0016 6.83343 13.532 7.26303 13.7936 7.88463C14.0528 8.50143 13.9952 9.17343 13.6352 9.73503V9.73743Z"
+                                fill="#00091A" />
+                            <path
+                                d="M15.6872 7.89911C15.6872 3.66071 12.2384 0.211914 8 0.211914C3.7616 0.211914 0.312805 3.66071 0.312805 7.89911C0.312805 11.7415 3.14481 14.9335 6.83121 15.4975L6.104 19.6039H4.0856C2.564 19.6039 1.32561 20.8423 1.32561 22.3615C1.32561 22.5607 1.48641 22.7215 1.68561 22.7215H14.3144C14.5136 22.7215 14.6744 22.5607 14.6744 22.3615C14.6744 20.8399 13.436 19.6039 11.9144 19.6039H9.896L9.16881 15.4975C12.8552 14.9335 15.6872 11.7391 15.6872 7.89911ZM11.9144 20.3239C12.9152 20.3239 13.7504 21.0487 13.9208 22.0015H2.07681C2.24721 21.0487 3.08241 20.3239 4.08321 20.3239H11.9144ZM6.8336 19.6039L7.52481 15.6967H8.47281L9.164 19.6039H6.8336ZM8 14.8663C4.1576 14.8663 1.03281 11.7415 1.03281 7.89911C1.03281 4.05671 4.1576 0.931914 8 0.931914C11.8424 0.931914 14.9672 4.05671 14.9672 7.89911C14.9672 11.7415 11.8424 14.8663 8 14.8663Z"
+                                fill="#00091A" />
+                        </svg>
+                        <p class="mr-2">لوازم خانگی</p>
+                    </li>
+                    <li class="mr-6 meun-item-1 flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="22" viewBox="0 0 24 22" fill="none">
+                            <path
+                                d="M23.5312 1.35132V10.7646M13.1824 10.2939H1.875C1.09833 10.2939 0.46875 9.66432 0.46875 8.88769V3.22824C0.46875 2.45157 1.09833 1.82199 1.875 1.82199H13.1824C13.959 1.82199 14.5886 2.45157 14.5886 3.22824V8.88769C14.5886 9.66432 13.959 10.2939 13.1824 10.2939ZM14.5886 3.23396H16.9419V8.88193H14.5886V3.23396ZM16.942 4.1753H18.8246V7.94058H16.942V4.1753ZM18.8246 5.11665H23.5312V6.99929H18.8246V5.11665ZM7.05802 17.3539H1.88072L2.82206 10.2939H7.99936L7.05802 17.3539ZM8.22192 20.6485H1.18748C0.790547 20.6485 0.46875 20.3267 0.46875 19.9298V18.0727C0.46875 17.6757 0.790547 17.3539 1.18748 17.3539H8.22192C8.61886 17.3539 8.94066 17.6757 8.94066 18.0727V19.9298C8.9407 20.3267 8.61891 20.6485 8.22192 20.6485Z"
+                                stroke="#00091A" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path
+                                d="M10.8233 10.294V11.7059C10.8233 12.4859 10.1912 13.1179 9.41138 13.1179H7.62281M7.74848 12.1766H2.57119M7.49714 14.0593H2.31989M21.6486 8.88196L20.2366 10.294M20.2366 1.82202L21.6486 3.23399M0.46875 8.41129H14.5886M10.8233 5.11668H12.706M2.35139 3.70466H8.94066V6.52865H2.35139V3.70466Z"
+                                stroke="#00091A" stroke-miterlimit="10" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <p class="mr-2">ابزار</p>
+                    </li>
+                    <li class="mr-6 menu-item-1 ">
+                        <div class="flex">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                fill="none">
+                                <path
+                                    d="M3.30997 16.371C3.23405 16.371 3.15984 16.3484 3.09672 16.3062C3.03361 16.264 2.98442 16.2041 2.95537 16.1339C2.92632 16.0638 2.91871 15.9866 2.93352 15.9121C2.94832 15.8377 2.98486 15.7693 3.03853 15.7156L5.34397 13.4082L4.37845 12.4429C4.3356 12.4001 4.3035 12.3477 4.28477 12.2901C4.26604 12.2324 4.26122 12.1712 4.27071 12.1113C4.28019 12.0515 4.3037 11.9947 4.33932 11.9457C4.37494 11.8967 4.42165 11.8568 4.47565 11.8292L8.30341 9.87637C8.37567 9.83953 8.45773 9.82652 8.53783 9.83919C8.61794 9.85187 8.69198 9.88958 8.74933 9.94693L10.2853 11.4829C10.3273 11.5244 10.3592 11.5749 10.3785 11.6307C10.3978 11.6865 10.404 11.7459 10.3966 11.8045C10.3892 11.863 10.3684 11.9191 10.3358 11.9683C10.3033 12.0175 10.2598 12.0585 10.2088 12.0882L8.00797 13.3724L8.90581 14.2703C8.95343 14.3179 8.9877 14.3771 9.0052 14.4421C9.02269 14.5071 9.02279 14.5756 9.00548 14.6407C8.98817 14.7057 8.95406 14.7651 8.90658 14.8128C8.85909 14.8605 8.7999 14.8949 8.73493 14.9125L3.41053 16.3576C3.37776 16.3665 3.34394 16.371 3.30997 16.371ZM5.29597 12.2742L6.15997 13.1382C6.23193 13.2102 6.27235 13.3078 6.27235 13.4096C6.27235 13.5114 6.23193 13.6091 6.15997 13.6811L4.60189 15.2392L7.89493 14.3442L7.11349 13.5628C7.07212 13.5212 7.04083 13.4707 7.022 13.4151C7.00318 13.3596 6.99734 13.3005 7.00491 13.2423C7.01249 13.1842 7.03329 13.1285 7.06572 13.0796C7.09814 13.0308 7.14133 12.99 7.19197 12.9604L9.39205 11.6752L8.40517 10.6883L5.29597 12.2742Z"
+                                    fill="#00091A" />
+                                <path
+                                    d="M7.1843 19.984C5.76652 19.9841 4.38057 19.5637 3.20171 18.7761C2.02285 17.9885 1.10404 16.8689 0.561471 15.5591C0.0189032 14.2492 -0.123049 12.8079 0.153566 11.4174C0.430182 10.0269 1.11294 8.74961 2.1155 7.74713L5.33558 4.52801C5.4076 4.45599 5.50528 4.41553 5.60714 4.41553C5.70899 4.41553 5.80667 4.45599 5.8787 4.52801C5.95072 4.60003 5.99118 4.69772 5.99118 4.79957C5.99118 4.90143 5.95072 4.99911 5.8787 5.07113L2.65838 8.29001C1.45816 9.49033 0.783894 11.1183 0.783894 12.8157C0.783894 14.5131 1.45816 16.1411 2.65838 17.3414C5.15438 19.8374 9.21421 19.8374 11.7095 17.3414L14.9298 14.1213C15.0027 14.054 15.0989 14.0175 15.1981 14.0196C15.2973 14.0216 15.3919 14.062 15.462 14.1322C15.5321 14.2024 15.5723 14.2971 15.5742 14.3963C15.576 14.4955 15.5394 14.5916 15.472 14.6644L12.2529 17.8845C11.5888 18.5522 10.7989 19.0815 9.92886 19.4419C9.05885 19.8023 8.12599 19.9866 7.1843 19.984Z"
+                                    fill="#00091A" />
+                                <path
+                                    d="M15.9452 14.9888C15.7102 14.9893 15.4775 14.9434 15.2603 14.8536C15.0432 14.7638 14.846 14.6319 14.6799 14.4656L5.53451 5.3202C5.19893 4.98466 5.0104 4.52955 5.01038 4.055C5.01035 3.58045 5.19885 3.12533 5.53439 2.78976C5.86993 2.45418 6.32503 2.26565 6.79958 2.26563C7.27413 2.2656 7.72925 2.45409 8.06483 2.78964L17.2105 11.9353C17.4608 12.1855 17.6313 12.5042 17.7003 12.8513C17.7694 13.1983 17.734 13.5581 17.5985 13.885C17.463 14.2119 17.2337 14.4913 16.9394 14.6878C16.6451 14.8843 16.2991 14.989 15.9452 14.9888ZM15.2233 13.9228C15.4148 14.1143 15.6746 14.2218 15.9454 14.2218C16.2163 14.2218 16.476 14.1142 16.6675 13.9226C16.859 13.7311 16.9666 13.4714 16.9666 13.2005C16.9665 12.9297 16.8589 12.6699 16.6674 12.4784L7.52171 3.33276C7.33021 3.14123 7.07047 3.03362 6.79963 3.03359C6.52879 3.03357 6.26904 3.14114 6.07751 3.33264C5.88598 3.52413 5.77837 3.78387 5.77834 4.05471C5.77832 4.32555 5.88589 4.58531 6.07739 4.77684L15.2233 13.9228Z"
+                                    fill="#00091A" />
+                                <path
+                                    d="M10.5904 6.24217C10.5144 6.24214 10.4402 6.2196 10.3771 6.1774C10.314 6.13521 10.2648 6.07525 10.2358 6.0051C10.2067 5.93496 10.1991 5.85777 10.2139 5.78331C10.2287 5.70884 10.2653 5.64044 10.3189 5.58673L14.152 1.75345C14.2583 1.6469 14.3181 1.50249 14.3181 1.35193C14.3181 1.20137 14.2583 1.05697 14.152 0.950414C14.0453 0.84416 13.901 0.784497 13.7504 0.784497C13.5999 0.784497 13.4555 0.84416 13.3489 0.950414L9.51588 4.78369C9.44379 4.85572 9.34605 4.89615 9.24415 4.89611C9.14225 4.89606 9.04454 4.85554 8.97252 4.78345C8.9005 4.71137 8.86006 4.61362 8.86011 4.51172C8.86015 4.40982 8.90068 4.31212 8.97276 4.24009L12.806 0.407294C13.0579 0.163392 13.3955 0.0282588 13.746 0.0310482C14.0966 0.0338377 14.432 0.174326 14.6799 0.422204C14.9278 0.670083 15.0684 1.00548 15.0712 1.35605C15.074 1.70661 14.939 2.04424 14.6951 2.29609L10.862 6.12985C10.8264 6.1655 10.784 6.19377 10.7374 6.21304C10.6908 6.23231 10.6408 6.24221 10.5904 6.24217ZM15.488 11.1399C15.4121 11.1399 15.3379 11.1174 15.2747 11.0752C15.2116 11.033 15.1623 10.973 15.1332 10.9029C15.1042 10.8327 15.0965 10.7555 15.1113 10.681C15.1261 10.6066 15.1627 10.5381 15.2164 10.4844L19.0496 6.65113C19.1561 6.54464 19.216 6.40021 19.216 6.24961C19.216 6.09902 19.1561 5.95458 19.0496 5.84809C18.943 5.74171 18.7986 5.68196 18.648 5.68196C18.4974 5.68196 18.353 5.74171 18.2464 5.84809L14.4133 9.68113C14.3413 9.75316 14.2436 9.79362 14.1418 9.79362C14.0399 9.79362 13.9422 9.75316 13.8702 9.68113C13.7982 9.60911 13.7577 9.51143 13.7577 9.40957C13.7577 9.30772 13.7982 9.21004 13.8702 9.13801L17.704 5.30473C17.9545 5.0542 18.2943 4.91345 18.6486 4.91345C19.0029 4.91345 19.3427 5.0542 19.5932 5.30473C19.8438 5.55527 19.9845 5.89507 19.9845 6.24937C19.9845 6.60368 19.8438 6.94348 19.5932 7.19401L15.76 11.0273C15.7243 11.0631 15.6819 11.0915 15.6353 11.1108C15.5886 11.1301 15.5386 11.14 15.488 11.1399Z"
+                                    fill="#00091A" />
+                            </svg>
+                            <p class="mr-2">برق صنعتی</p>
+                        </div>
+
+                    </li>
+                    <li class="mr-6 meun-item-1 flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M22 17V13C22 7.47715 17.5228 3 12 3C6.47715 3 2 7.47715 2 13V17M7.5 21C6.11929 21 5 19.8807 5 18.5V15.5C5 14.1193 6.11929 13 7.5 13C8.88071 13 10 14.1193 10 15.5V18.5C10 19.8807 8.88071 21 7.5 21ZM16.5 21C15.1193 21 14 19.8807 14 18.5V15.5C14 14.1193 15.1193 13 16.5 13C17.8807 13 19 14.1193 19 15.5V18.5C19 19.8807 17.8807 21 16.5 21Z"
+                                stroke="#00091A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p class="mr-2">کالای دیجیتال</p>
+                    </li>
+                    <li class="mr-6 meun-item-1 flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20 12.5C19.6089 12.5101 19.2372 12.6726 18.9641 12.9528C18.6911 13.233 18.5382 13.6088 18.5382 14C18.5382 14.3912 18.6911 14.767 18.9641 15.0472C19.2372 15.3274 19.6089 15.4899 20 15.5C20.3911 15.4899 20.7628 15.3274 21.0359 15.0472C21.309 14.767 21.4618 14.3912 21.4618 14C21.4618 13.6088 21.309 13.233 21.0359 12.9528C20.7628 12.6726 20.3911 12.5101 20 12.5ZM20 13.5C20.1326 13.5 20.2598 13.5527 20.3536 13.6464C20.4473 13.7402 20.5 13.8674 20.5 14C20.5 14.1326 20.4473 14.2598 20.3536 14.3536C20.2598 14.4473 20.1326 14.5 20 14.5C19.8674 14.5 19.7402 14.4473 19.6465 14.3536C19.5527 14.2598 19.5 14.1326 19.5 14C19.5 13.8674 19.5527 13.7402 19.6465 13.6464C19.7402 13.5527 19.8674 13.5 20 13.5Z"
+                                fill="#00091A" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M13.3945 2.55302C13.7121 2.63926 13.9925 2.82772 14.1924 3.08926C14.3922 3.35081 14.5003 3.67088 14.5 4.00002V5.50002H14C13.602 5.50002 13.2205 5.65802 12.9395 5.93952C12.8001 6.07871 12.6895 6.24403 12.6141 6.426C12.5387 6.60798 12.4999 6.80304 12.5 7.00002V8.00002C12.5 9.1935 12.0259 10.3381 11.182 11.182C10.3381 12.0259 9.19347 12.5 8 12.5C6.80653 12.5 5.66193 12.0259 4.81802 11.182C3.97411 10.3381 3.5 9.1935 3.5 8.00002V7.00002C3.5 6.60202 3.342 6.22052 3.0605 5.93952C2.92131 5.80014 2.756 5.68957 2.57402 5.61416C2.39205 5.53874 2.19698 5.49996 2 5.50002H1.5V4.00002C1.49971 3.67088 1.60782 3.35081 1.80764 3.08926C2.00746 2.82772 2.28786 2.63926 2.6055 2.55302C2.70593 2.8066 2.87357 3.02802 3.09041 3.19346C3.30724 3.3589 3.56507 3.46211 3.83617 3.49199C4.10727 3.52187 4.38139 3.4773 4.62905 3.36307C4.87672 3.24883 5.08856 3.06925 5.24181 2.84363C5.39506 2.61802 5.48392 2.3549 5.49883 2.08256C5.51375 1.81023 5.45415 1.53898 5.32645 1.29798C5.19875 1.05698 5.00778 0.855344 4.77407 0.714749C4.54035 0.574154 4.27274 0.499919 4 0.500024C3.334 0.500024 2.7685 0.935024 2.573 1.53652C1.99279 1.6375 1.4668 1.93992 1.08761 2.39054C0.708419 2.84116 0.500341 3.41109 0.5 4.00002V8.00002C0.5 11.6285 3.077 14.655 6.5 15.35V16C6.49975 16.3103 6.59582 16.6129 6.77495 16.8662C6.95408 17.1195 7.20742 17.3109 7.5 17.414V20C7.5 20.4597 7.59053 20.9148 7.76642 21.3394C7.94231 21.7641 8.20012 22.1499 8.52513 22.4749C8.85013 22.7999 9.23597 23.0577 9.66061 23.2336C10.0852 23.4095 10.5404 23.5 11 23.5C11.4596 23.5 11.9148 23.4095 12.3394 23.2336C12.764 23.0577 13.1499 22.7999 13.4749 22.4749C13.7999 22.1499 14.0577 21.7641 14.2336 21.3394C14.4095 20.9148 14.5 20.4597 14.5 20V16.999C14.5 16.4155 14.7041 15.8504 15.0771 15.4016C15.4501 14.9528 15.9683 14.6487 16.542 14.542C16.6718 15.3661 17.0914 16.1167 17.7253 16.659C18.3592 17.2012 19.1658 17.4995 20 17.5C21.9315 17.5 23.5 15.9315 23.5 14C23.5 12.0685 21.9315 10.5 20 10.5C19.153 10.5005 18.3348 10.8079 17.6971 11.3653C17.0593 11.9226 16.645 12.6922 16.531 13.5315C15.6916 13.6446 14.9218 14.0584 14.3643 14.6961C13.8069 15.3338 13.4998 16.1521 13.5 16.999V20C13.4999 20.6631 13.2366 21.299 12.768 21.768C12.4184 22.1178 11.9729 22.3559 11.4879 22.4524C11.0028 22.5489 10.5001 22.4994 10.0432 22.3102C9.58636 22.1209 9.19588 21.8004 8.92118 21.3892C8.64648 20.978 8.49991 20.4945 8.5 20V17.414C8.79258 17.3109 9.04592 17.1195 9.22505 16.8662C9.40418 16.6129 9.50025 16.3103 9.5 16V15.35C12.923 14.655 15.5 11.6285 15.5 8.00002V4.00002C15.4997 3.41109 15.2916 2.84116 14.9124 2.39054C14.5332 1.93992 14.0072 1.6375 13.427 1.53652C13.3416 1.27326 13.1851 1.03875 12.9747 0.858918C12.7643 0.679089 12.5083 0.560952 12.2349 0.517571C11.9616 0.47419 11.6815 0.507256 11.4258 0.613112C11.1701 0.718969 10.9486 0.89349 10.7859 1.11738C10.6232 1.34126 10.5256 1.60579 10.5039 1.8817C10.4821 2.15762 10.5371 2.43417 10.6628 2.68077C10.7884 2.92737 10.9798 3.13441 11.2158 3.27899C11.4518 3.42358 11.7232 3.50008 12 3.50002C12.3005 3.49992 12.5941 3.4096 12.8427 3.24076C13.0914 3.07192 13.2836 2.83234 13.3945 2.55302ZM8 16.5C7.93428 16.5002 7.86918 16.4874 7.80842 16.4624C7.74767 16.4373 7.69247 16.4005 7.64601 16.354C7.59954 16.3076 7.56271 16.2524 7.53766 16.1916C7.5126 16.1308 7.4998 16.0657 7.5 16V14.929C7.5 14.6805 7.317 14.4695 7.071 14.434C3.921 13.9835 1.5 11.2745 1.5 8.00002V6.50002H2C2.06572 6.49983 2.13082 6.51262 2.19158 6.53768C2.25233 6.56274 2.30753 6.59956 2.354 6.64603C2.40046 6.6925 2.43729 6.7477 2.46234 6.80845C2.4874 6.8692 2.5002 6.93431 2.5 7.00002V8.00002C2.5 11.0375 4.9625 13.5 8 13.5C11.0375 13.5 13.5 11.0375 13.5 8.00002V7.00002C13.4998 6.93431 13.5126 6.8692 13.5377 6.80845C13.5627 6.7477 13.5995 6.6925 13.646 6.64603C13.6925 6.59956 13.7477 6.56274 13.8084 6.53768C13.8692 6.51262 13.9343 6.49983 14 6.50002H14.5V8.00002C14.5 11.2745 12.079 13.9835 8.929 14.434C8.80994 14.4512 8.70106 14.5107 8.62228 14.6016C8.5435 14.6925 8.50009 14.8087 8.5 14.929V16C8.5002 16.0657 8.4874 16.1308 8.46234 16.1916C8.43729 16.2524 8.40046 16.3076 8.354 16.354C8.30753 16.4005 8.25233 16.4373 8.19158 16.4624C8.13082 16.4874 8.06572 16.5002 8 16.5ZM20 11.5C21.38 11.5 22.5 12.62 22.5 14C22.5 15.38 21.38 16.5 20 16.5C18.62 16.5 17.5 15.38 17.5 14C17.5 12.62 18.62 11.5 20 11.5ZM12 1.50002C12.1326 1.50002 12.2598 1.5527 12.3536 1.64647C12.4473 1.74024 12.5 1.86742 12.5 2.00002C12.5 2.13263 12.4473 2.25981 12.3536 2.35358C12.2598 2.44735 12.1326 2.50002 12 2.50002C11.8674 2.50002 11.7402 2.44735 11.6464 2.35358C11.5527 2.25981 11.5 2.13263 11.5 2.00002C11.5 1.86742 11.5527 1.74024 11.6464 1.64647C11.7402 1.5527 11.8674 1.50002 12 1.50002ZM4 1.50002C4.13261 1.50002 4.25979 1.5527 4.35355 1.64647C4.44732 1.74024 4.5 1.86742 4.5 2.00002C4.5 2.13263 4.44732 2.25981 4.35355 2.35358C4.25979 2.44735 4.13261 2.50002 4 2.50002C3.86739 2.50002 3.74021 2.44735 3.64645 2.35358C3.55268 2.25981 3.5 2.13263 3.5 2.00002C3.5 1.86742 3.55268 1.74024 3.64645 1.64647C3.74021 1.5527 3.86739 1.50002 4 1.50002Z"
+                                fill="#00091A" />
+                        </svg>
+                        <p class="mr-2">تجهیزات پزشکی</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <!-- mobile -->
+        <div class=" single-mobile lg:hidden flex w-full  justify-between items-center px-4 py-3 ">
+            <!-- right side -->
+            <div class="flex">
+                <div class="ml-4">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#3F4143" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+                <div>
+                    <p>عنوان دسته بندی</p>
+                </div>
+            </div>
+            <!-- btn -->
+            <div class="flex">
+                <div class="ml-4">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M5.00014 14H18.1359C19.1487 14 19.6551 14 20.0582 13.8112C20.4134 13.6448 20.7118 13.3777 20.9163 13.0432C21.1485 12.6633 21.2044 12.16 21.3163 11.1534L21.9013 5.88835C21.9355 5.58088 21.9525 5.42715 21.9031 5.30816C21.8597 5.20366 21.7821 5.11697 21.683 5.06228C21.5702 5 21.4155 5 21.1062 5H4.50014M2 2H3.24844C3.51306 2 3.64537 2 3.74889 2.05032C3.84002 2.09463 3.91554 2.16557 3.96544 2.25376C4.02212 2.35394 4.03037 2.48599 4.04688 2.7501L4.95312 17.2499C4.96963 17.514 4.97788 17.6461 5.03456 17.7462C5.08446 17.8344 5.15998 17.9054 5.25111 17.9497C5.35463 18 5.48694 18 5.75156 18H19M7.5 21.5H7.51M16.5 21.5H16.51M8 21.5C8 21.7761 7.77614 22 7.5 22C7.22386 22 7 21.7761 7 21.5C7 21.2239 7.22386 21 7.5 21C7.77614 21 8 21.2239 8 21.5ZM17 21.5C17 21.7761 16.7761 22 16.5 22C16.2239 22 16 21.7761 16 21.5C16 21.2239 16.2239 21 16.5 21C16.7761 21 17 21.2239 17 21.5Z"
+                                stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                </div>
+                <div onclick="oppenOffcanvasHeader()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path
+                            d="M21 21L17.5001 17.5M20 11.5C20 16.1944 16.1944 20 11.5 20C6.80558 20 3 16.1944 3 11.5C3 6.80558 6.80558 3 11.5 3C16.1944 3 20 6.80558 20 11.5Z"
+                            stroke="#3F4143" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+        <!-- Offcanvas -->
+        <div id="offcanvas" class="w-full h-full lg:hidden bg-white  z-50 fixed bottom-0 shadow-lg transform translate-y-full 
+                    transition-transform duration-500 overflow-auto">
+            <div class="sm:px-4 px-1 mb-4">
+                <div class="search-container">
+                    <div class="flex search-input-mobile">
+                        <div onclick="closeOffcancasHeader()">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M4 12H20M20 12L14 6M20 12L14 18" stroke="#253858" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <form class="w-full mr-2">
+                            <input type="text" class="w-full input-search ">
+                        </form>
+                    </div>
+                    <!-- results -->
+                    ‍ <div class="results-box-mobile results  hidden">
+                        <!-- 1 step -->
+                        <div>
+                            <div class="mb-6 box  block">
+                                <p class="mb-4 title">بیشترین عبارات جستجو شده</p>
+                                <ul class="flex flex-wrap">
+                                    <li class="tag px-3 mr-4 mt-2">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                    <li class="tag px-3 mr-4 mt-2">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                    <li class="tag px-3 mr-4 mt-2">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                    <li class="tag px-3 mr-4 mt-2">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                    <li class="tag px-3 mr-4 mt-2">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="mb-6 box block">
+                                <div class="flex justify-between items-center mb-4">
+                                    <p class="title">محبوب‌ترین محصولات آرتا الکتریک</p>
+                                    <a href="#" class="flex all-result-link">
+                                        همه نتایج
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none" class="mr-1">
+                                            <path d="M12.5 15L7.5 10L12.5 5" stroke="#505F79" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div>
+
+
+                                    <div class="w-full flex card justify-between items-center mb-2 mr-2">
+                                        <div class="image">
+                                            <img src="./assets/image/Thumbnail (4).png" alt="">
+                                        </div>
+                                        <div class="content flex items-center w-full ">
+                                            <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="w-full flex card justify-between items-center mb-2 mr-2">
+                                        <div class="image">
+                                            <img src="./assets/image/Thumbnail (4).png" alt="">
+                                        </div>
+                                        <div class="content flex items-center w-full ">
+                                            <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex card justify-between items-center mb-2 mr-2">
+                                        <div class="image">
+                                            <img src="./assets/image/Thumbnail (4).png" alt="">
+                                        </div>
+                                        <div class="content flex items-center w-full ">
+                                            <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-6 box block ">
+                                <div class="flex justify-between items-center mb-4">
+                                    <p class="title">محبوب‌ترین محصولات آرتا الکتریک</p>
+                                    <a href="#" class="flex all-result-link">
+                                        همه نتایج
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none" class="mr-1">
+                                            <path d="M12.5 15L7.5 10L12.5 5" stroke="#505F79" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div>
+
+
+                                    <div class="w-full flex card justify-between items-center mb-2 mr-2">
+                                        <div class="image">
+                                            <img src="./assets/image/Thumbnail (4).png" alt="">
+                                        </div>
+                                        <div class="content flex items-center w-full ">
+                                            <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="w-full flex card justify-between items-center mb-2 mr-2">
+                                        <div class="image">
+                                            <img src="./assets/image/Thumbnail (4).png" alt="">
+                                        </div>
+                                        <div class="content flex items-center w-full ">
+                                            <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex card justify-between items-center mb-2 mr-2">
+                                        <div class="image">
+                                            <img src="./assets/image/Thumbnail (4).png" alt="">
+                                        </div>
+                                        <div class="content flex items-center w-full ">
+                                            <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  Search successful  -->
+                        <div class="mb-6 hidden box">
+                            <div class="flex justify-between items-center mb-4">
+                                <p class="title">نتایج جستجو</p>
+                                <a href="#" class="flex all-result-link">
+                                    همه نتایج
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                                        fill="none" class="mr-1">
+                                        <path d="M12.5 15L7.5 10L12.5 5" stroke="#505F79" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="w-full flex card justify-between items-center mb-2">
+                                    <div class="image">
+                                        <img src="./assets/image/Thumbnail (4).png" alt="">
+                                    </div>
+                                    <div class="content flex items-center w-full ">
+                                        <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                    </div>
+                                </div>
+                                <div class="w-full flex card justify-between items-center mb-2">
+                                    <div class="image">
+                                        <img src="./assets/image/Thumbnail (4).png" alt="">
+                                    </div>
+                                    <div class="content flex items-center w-full ">
+                                        <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                    </div>
+                                </div>
+                                <div class="w-full flex card justify-between items-center mb-2">
+                                    <div class="image">
+                                        <img src="./assets/image/Thumbnail (4).png" alt="">
+                                    </div>
+                                    <div class="content flex items-center w-full ">
+                                        <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Search failed -->
+                        <div class="failed">
+                            <div class="mb-6 block">
+                                <p class="mb-4 title">بیشترین عبارات جستجو شده</p>
+                                <ul class="flex flex-wrap">
+                                    <li class="tag px-3 mr-4  mt-2">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                    <li class="tag px-3 mr-4 mt-2">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                    <li class="tag px-3 mr-4 mt-2">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                    <li class="tag px-3 mr-4 mt-2">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                    <li class="tag px-3 mr-4 mt-2">
+                                        <a href="#">عنوان تستی</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <p class="title mb-4">نتایج جستجو</p>
+                                <div class="flex flex-col items-center py-10">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path
+                                            d="M15 9L9 15M9 9L15 15M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                                            stroke="#7A869A" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                    <p class="status">عبارت مورد نظر پیدا نشد!</p>
+                                </div>
+                            </div>
+                            <div class="mb-6   block">
+                                <div class="flex justify-between items-center mb-4">
+                                    <p class="title">جدیدترین‌ها</p>
+                                    <a href="#" class="flex all-result-link">
+                                        همه نتایج
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 20 20" fill="none" class="mr-1">
+                                            <path d="M12.5 15L7.5 10L12.5 5" stroke="#505F79" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div>
+                                    <div class="w-full flex card justify-between items-center mb-2">
+                                        <div class="image">
+                                            <img src="./assets/image/Thumbnail (4).png" alt="">
+                                        </div>
+                                        <div class="content flex items-center w-full ">
+                                            <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex card justify-between items-center mb-2">
+                                        <div class="image">
+                                            <img src="./assets/image/Thumbnail (4).png" alt="">
+                                        </div>
+                                        <div class="content flex items-center w-full ">
+                                            <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                        </div>
+                                    </div>
+                                    <div class="w-full flex card justify-between items-center mb-2">
+                                        <div class="image">
+                                            <img src="./assets/image/Thumbnail (4).png" alt="">
+                                        </div>
+                                        <div class="content flex items-center w-full ">
+                                            <p>لامپ دکوراتیو فیلامنتی 8 وات اشکی مدل 6 پر</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </header>
+
+
+
+    <!-- single action -->
+    <!-- یکی یکی کامنت کنید تا حالت های مختلف رو ببینید -->
+    <!-- step 1 -->
+    <div class="button-navbar flex w-full lg:hidden z-30">
+        <div class="w-full px-3 py-4 single">
+            <div class="info flex items-center">
+                <div class="offer py-1 px-2 mr-4">30%</div>
+                <p class="previous-price  mr-4">990 هزار تومان</p>
+                <p class="new-price  mr-4">810 هزار تومان</p>
+            </div>
+            <div class="buy mt-2 w-full block" id="buy-step-1">
+                <button class="px-4 h-10 w-full flex items-center justify-center " id="buy-btn">
+                    <p class="ml-2">افزودن به سبد خرید</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <g clip-path="url(#clip0_350_81)">
+                            <path
+                                d="M1.66667 1.66663H2.75514C2.96016 1.66663 3.06266 1.66663 3.14516 1.70433C3.21785 1.73755 3.27946 1.79098 3.32263 1.85825C3.37162 1.93458 3.38611 2.03606 3.41511 2.23901L3.80953 4.99996M3.80953 4.99996L4.6861 11.4428C4.79734 12.2604 4.85296 12.6692 5.04842 12.9769C5.22065 13.2481 5.46757 13.4637 5.75947 13.5978C6.09072 13.75 6.50329 13.75 7.32843 13.75H14.46C15.2455 13.75 15.6382 13.75 15.9591 13.6086C16.2421 13.484 16.4849 13.2832 16.6602 13.0285C16.8591 12.7396 16.9326 12.3538 17.0796 11.5823L18.1826 5.79137C18.2343 5.5198 18.2602 5.38401 18.2227 5.27788C18.1898 5.18477 18.1249 5.10636 18.0396 5.05664C17.9424 4.99996 17.8042 4.99996 17.5277 4.99996H3.80953ZM8.33334 17.5C8.33334 17.9602 7.96024 18.3333 7.5 18.3333C7.03977 18.3333 6.66667 17.9602 6.66667 17.5C6.66667 17.0397 7.03977 16.6666 7.5 16.6666C7.96024 16.6666 8.33334 17.0397 8.33334 17.5ZM15 17.5C15 17.9602 14.6269 18.3333 14.1667 18.3333C13.7064 18.3333 13.3333 17.9602 13.3333 17.5C13.3333 17.0397 13.7064 16.6666 14.1667 16.6666C14.6269 16.6666 15 17.0397 15 17.5Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_350_81">
+                                <rect width="20" height="20" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </button>
+            </div>
+            <div class="buy mt-2 w-full hidden justify-between items-center " id="buy-step-2">
+                <a href="#">
+                    <button class="px-4 h-10  flex items-center justify-center ">
+                        <p class="ml-2">مشاهده سبد خرید</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M2.01677 10.5943C1.90328 10.4146 1.84654 10.3247 1.81477 10.1861C1.79091 10.082 1.79091 9.91788 1.81477 9.81378C1.84654 9.67519 1.90328 9.58534 2.01677 9.40564C2.95461 7.92066 5.74617 4.16663 10.0003 4.16663C14.2545 4.16663 17.0461 7.92066 17.9839 9.40564C18.0974 9.58534 18.1541 9.67519 18.1859 9.81378C18.2098 9.91788 18.2098 10.082 18.1859 10.1861C18.1541 10.3247 18.0974 10.4146 17.9839 10.5943C17.0461 12.0793 14.2545 15.8333 10.0003 15.8333C5.74617 15.8333 2.95461 12.0793 2.01677 10.5943Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M10.0003 12.5C11.381 12.5 12.5003 11.3807 12.5003 9.99996C12.5003 8.61925 11.381 7.49996 10.0003 7.49996C8.61962 7.49996 7.50034 8.61925 7.50034 9.99996C7.50034 11.3807 8.61962 12.5 10.0003 12.5Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </a>
+                <div class="action h-10 px-4 flex items-center">
+                    <button class=" plus" id="plus-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 4.16663V15.8333M4.16667 9.99996H15.8333" stroke="black" stroke-opacity="0.8784"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <p class="number mx-6" id="number-buy"></p>
+                    <button class="block" id="delete-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M2.5 4.99996H17.5H2.5Z" fill="#FF4D4F" />
+                            <path
+                                d="M13.3333 4.99996V4.33329C13.3333 3.39987 13.3333 2.93316 13.1517 2.57664C12.9919 2.26304 12.7369 2.00807 12.4233 1.84828C12.0668 1.66663 11.6001 1.66663 10.6667 1.66663H9.33333C8.39991 1.66663 7.9332 1.66663 7.57668 1.84828C7.26308 2.00807 7.00811 2.26304 6.84832 2.57664C6.66667 2.93316 6.66667 3.39987 6.66667 4.33329V4.99996M8.33333 9.58329V13.75M11.6667 9.58329V13.75M2.5 4.99996H17.5M15.8333 4.99996V14.3333C15.8333 15.7334 15.8333 16.4335 15.5608 16.9683C15.3212 17.4387 14.9387 17.8211 14.4683 18.0608C13.9335 18.3333 13.2335 18.3333 11.8333 18.3333H8.16667C6.76654 18.3333 6.06647 18.3333 5.53169 18.0608C5.06129 17.8211 4.67883 17.4387 4.43915 16.9683C4.16667 16.4335 4.16667 15.7334 4.16667 14.3333V4.99996"
+                                stroke="#FF4D4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <button class="hidden" id="munes-bnt">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.16666 10H15.8333" stroke="black" stroke-opacity="0.8784" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+
+    <!-- step 2 -->
+     <!-- <div class="button-navbar flex w-full lg:hidden z-30">
+        <div class="w-full px-3 py-4 single">
+            <div class="info flex items-center">
+                <div class="offer py-1 px-2 mr-4">30%</div>
+                <p class="previous-price  mr-4">990 هزار تومان</p>
+                <p class="new-price  mr-4">810 هزار تومان</p>
+            </div>
+            <div class="buy mt-2 w-full flex justify-between items-center ">
+                <a href="#">
+                    <button class="px-4 h-10  flex items-center justify-center ">
+                        <p class="ml-2">مشاهده سبد خرید</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M2.01677 10.5943C1.90328 10.4146 1.84654 10.3247 1.81477 10.1861C1.79091 10.082 1.79091 9.91788 1.81477 9.81378C1.84654 9.67519 1.90328 9.58534 2.01677 9.40564C2.95461 7.92066 5.74617 4.16663 10.0003 4.16663C14.2545 4.16663 17.0461 7.92066 17.9839 9.40564C18.0974 9.58534 18.1541 9.67519 18.1859 9.81378C18.2098 9.91788 18.2098 10.082 18.1859 10.1861C18.1541 10.3247 18.0974 10.4146 17.9839 10.5943C17.0461 12.0793 14.2545 15.8333 10.0003 15.8333C5.74617 15.8333 2.95461 12.0793 2.01677 10.5943Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M10.0003 12.5C11.381 12.5 12.5003 11.3807 12.5003 9.99996C12.5003 8.61925 11.381 7.49996 10.0003 7.49996C8.61962 7.49996 7.50034 8.61925 7.50034 9.99996C7.50034 11.3807 8.61962 12.5 10.0003 12.5Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </a>
+                <div class="action h-10 px-4 flex items-center">
+                    <button class=" plus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 4.16663V15.8333M4.16667 9.99996H15.8333" stroke="black" stroke-opacity="0.8784"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <p class="number mx-6">1</p>
+                    <button class=" delete">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M2.5 4.99996H17.5H2.5Z" fill="#FF4D4F" />
+                            <path
+                                d="M13.3333 4.99996V4.33329C13.3333 3.39987 13.3333 2.93316 13.1517 2.57664C12.9919 2.26304 12.7369 2.00807 12.4233 1.84828C12.0668 1.66663 11.6001 1.66663 10.6667 1.66663H9.33333C8.39991 1.66663 7.9332 1.66663 7.57668 1.84828C7.26308 2.00807 7.00811 2.26304 6.84832 2.57664C6.66667 2.93316 6.66667 3.39987 6.66667 4.33329V4.99996M8.33333 9.58329V13.75M11.6667 9.58329V13.75M2.5 4.99996H17.5M15.8333 4.99996V14.3333C15.8333 15.7334 15.8333 16.4335 15.5608 16.9683C15.3212 17.4387 14.9387 17.8211 14.4683 18.0608C13.9335 18.3333 13.2335 18.3333 11.8333 18.3333H8.16667C6.76654 18.3333 6.06647 18.3333 5.53169 18.0608C5.06129 17.8211 4.67883 17.4387 4.43915 16.9683C4.16667 16.4335 4.16667 15.7334 4.16667 14.3333V4.99996"
+                                stroke="#FF4D4F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div> 
+
+
+     <div class="button-navbar flex w-full lg:hidden z-30">
+        <div class="w-full px-3 py-4 single">
+            <div class="info flex items-center">
+                <div class="offer py-1 px-2 mr-4">30%</div>
+                <p class="previous-price  mr-4">990 هزار تومان</p>
+                <p class="new-price  mr-4">810 هزار تومان</p>
+            </div>
+            <div class="buy mt-2 w-full flex justify-between items-center ">
+                <a href="#">
+                    <button class="px-4 h-10  flex items-center justify-center ">
+                        <p class="ml-2">مشاهده سبد خرید</p>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path
+                                d="M2.01677 10.5943C1.90328 10.4146 1.84654 10.3247 1.81477 10.1861C1.79091 10.082 1.79091 9.91788 1.81477 9.81378C1.84654 9.67519 1.90328 9.58534 2.01677 9.40564C2.95461 7.92066 5.74617 4.16663 10.0003 4.16663C14.2545 4.16663 17.0461 7.92066 17.9839 9.40564C18.0974 9.58534 18.1541 9.67519 18.1859 9.81378C18.2098 9.91788 18.2098 10.082 18.1859 10.1861C18.1541 10.3247 18.0974 10.4146 17.9839 10.5943C17.0461 12.0793 14.2545 15.8333 10.0003 15.8333C5.74617 15.8333 2.95461 12.0793 2.01677 10.5943Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M10.0003 12.5C11.381 12.5 12.5003 11.3807 12.5003 9.99996C12.5003 8.61925 11.381 7.49996 10.0003 7.49996C8.61962 7.49996 7.50034 8.61925 7.50034 9.99996C7.50034 11.3807 8.61962 12.5 10.0003 12.5Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </a>
+                <div class="action h-10 px-4 flex items-center">
+                    <button class=" plus">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M10 4.16663V15.8333M4.16667 9.99996H15.8333" stroke="black" stroke-opacity="0.8784"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                    <p class="number mx-6">2</p>
+                    <button class=" munes">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.16666 10H15.8333" stroke="black" stroke-opacity="0.8784" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>  -->
+
+
+
+    <!-- <div class="buy mt-2 w-full flex justify-between items-center ">
+        <a href="#">
+            <button class="px-4 h-10  flex items-center justify-center ">
+                <p class="ml-2">مشاهده سبد خرید</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path
+                        d="M2.01677 10.5943C1.90328 10.4146 1.84654 10.3247 1.81477 10.1861C1.79091 10.082 1.79091 9.91788 1.81477 9.81378C1.84654 9.67519 1.90328 9.58534 2.01677 9.40564C2.95461 7.92066 5.74617 4.16663 10.0003 4.16663C14.2545 4.16663 17.0461 7.92066 17.9839 9.40564C18.0974 9.58534 18.1541 9.67519 18.1859 9.81378C18.2098 9.91788 18.2098 10.082 18.1859 10.1861C18.1541 10.3247 18.0974 10.4146 17.9839 10.5943C17.0461 12.0793 14.2545 15.8333 10.0003 15.8333C5.74617 15.8333 2.95461 12.0793 2.01677 10.5943Z"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M10.0003 12.5C11.381 12.5 12.5003 11.3807 12.5003 9.99996C12.5003 8.61925 11.381 7.49996 10.0003 7.49996C8.61962 7.49996 7.50034 8.61925 7.50034 9.99996C7.50034 11.3807 8.61962 12.5 10.0003 12.5Z"
+                        stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </a>
+        <div class="action h-10 px-4 flex items-center">
+            <button class=" plus">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M10 4.16663V15.8333M4.16667 9.99996H15.8333" stroke="black" stroke-opacity="0.8784"
+                        stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+            <p class="number mx-6">2</p>
+            <button class=" munes">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <path d="M4.16666 10H15.8333" stroke="black" stroke-opacity="0.8784" stroke-width="1.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div> -->
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
