@@ -152,6 +152,8 @@ body {
   border-bottom-right-radius: 12px;
   border-top: none;
   padding: 0 16px;
+  height: 600px;
+  overflow-y: scroll;
 }
 .product-header .header-container .right-side .search-container .results-box .title {
   color: #00091A;
@@ -715,6 +717,7 @@ body {
   background: #fff;
   position: fixed;
   bottom: 0;
+  z-index: 30;
 }
 .button-navbar .item {
   border-top: 2px solid #BFBFBF;
@@ -1026,3 +1029,8 @@ body {
     overflow: hidden;
   }
 }/*# sourceMappingURL=style.css.map */
+
+.my-code .title::before{
+  content: '';  
+  display: none;
+}

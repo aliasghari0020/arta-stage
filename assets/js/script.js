@@ -69,7 +69,7 @@ const oppenOffcanvatBotHeader = () => {
 }
 
 const closeOffcanvatBotHeader = () => {
-  toggleClass("#offcanvat-bot", 'translate-y-full', 'add');
+  toggleClass("#offcanvat-bot", 'translate-y-full', 'toggle');
 }
 const closeOffcanvatBot = () => {
   const btn = document.querySelector(".category-btn ")
@@ -130,6 +130,8 @@ const setStyleActiveTimeSearchBox = () => {
     const input = e.querySelector(".input-search");
     const icon = search[0].querySelector("svg path");
     const resultsBox = e.querySelector('.results');
+
+    console.log(e.querySelector('.results'))
     const resultsValue = document.querySelector(".show-vleue")
     const logo = document.querySelector('#logo');
     input.addEventListener('input', () => {
@@ -144,8 +146,6 @@ const setStyleActiveTimeSearchBox = () => {
           toggleClass("#logo", 'hidden', 'add');
           resultsValue.innerHTML = value;
         }
-
-
       } else {
         resultsBox.classList.replace("block", "hidden")
         icon.setAttribute("style", "stroke:#BFBFBF;")
@@ -298,7 +298,7 @@ const showItemDesktop = () => {
   });
 };
 
-showItemDesktop()
+
 
 if (modal) {
   modalFunction()
@@ -312,6 +312,7 @@ if (magaMenu) {
   closeMegaMenu()
   openSubMenuMega()
   addclassActive()
+  showItemDesktop()
 }
 if (search) {
   setStyleActiveTimeSearchBox()
@@ -327,4 +328,18 @@ if (offcanvatBot) {
 
 
 
+// let usedClasses = new Set();
 
+// // بررسی تمام گره‌های DOM
+// let allNodes = [...document.getElementsByTagName('*')];
+// allNodes.forEach(node => {
+//     let classes = node.classList;
+//     classes.forEach(className => {
+//         if (className) {
+//             usedClasses.add(className);
+//         }
+//     });
+// });
+
+// // چاپ کلاس‌های استفاده شده
+// console.log(Array.from(usedClasses));

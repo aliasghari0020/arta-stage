@@ -6,7 +6,6 @@ const calculateSlidesPerView = (size) => {
 };
 const prevButton = document.querySelector(".prev");
 const nextButton = document.querySelector(".next");
-console.log(prevButton)
 const swiper = new Swiper('#blog-footer', {
   slidesPerView: calculateSlidesPerView(124),
 
@@ -43,10 +42,16 @@ const swiper1 = new Swiper('#product-footer', {
 });
 
 
+
 window.addEventListener('resize', () => {
   swiper.params.slidesPerView = calculateSlidesPerView(124);
-  swiper1.params.slidesPerView = calculateSlidesPerView(220);
+ 
+  if(document.querySelector('#product-footer')){
+    swiper1.params.slidesPerView = calculateSlidesPerView(220);
+    swiper1.update();
+  }
   swiper.update();
-  swiper1.update();
+
 
 });
+
