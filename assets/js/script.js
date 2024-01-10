@@ -30,6 +30,7 @@ const openSubMenuMega = () => {
         }
       });
     });
+    
   });
 }
 
@@ -200,6 +201,8 @@ const buySingle = () => {
 
 const addclassActive = () => {
   const menu = document.querySelectorAll('.product-header #maga-menu-tablet nav li');
+  const Onemenu = document.querySelector('.product-header #maga-menu-tablet nav li');
+  Onemenu.classList.add('active')
   menu.forEach((e) => {
     let mega = e.querySelector('.menu-mobile')
 
@@ -269,22 +272,28 @@ const removeClass = (item, selector) => {
 };
 
 const handleBoxClick = (box) => {
-  
-  box.addEventListener('click', () => {
+  box.addEventListener('mouseover', () => {
+    // حذف کلاس 'active' از تمام 'box'‌ها
     removeClass(box.parentNode, '.box');
+    // اضافه کردن کلاس 'active' به 'box' مورد نظر
     box.classList.add('active');
   });
 };
 
 const handleMenuContentClick = (item, e) => {
-  e.addEventListener("click", () => {
+  e.addEventListener("mouseover", () => {
+
     removeClass(item, '.menu-content');
+
     e.classList.add('active');
     if (e.classList.contains('active') && e.querySelector(".sub-menu-content")) {
       e.querySelectorAll(".box").forEach(handleBoxClick);
- 
     }
   });
+
+  // e.addEventListener("mouseout", () => {
+  //   e.classList.remove('active');
+  // });
 };
 
 const showItemDesktop = () => {
@@ -295,9 +304,9 @@ const showItemDesktop = () => {
       handleMenuContentClick(item, e);
     });
     item.querySelector('.menu-content').classList.add('active');
+    item.querySelector('.box').classList.add('active');
   });
 };
-
 
 
 if (modal) {
@@ -327,19 +336,3 @@ if (offcanvatBot) {
 
 
 
-
-// let usedClasses = new Set();
-
-// // بررسی تمام گره‌های DOM
-// let allNodes = [...document.getElementsByTagName('*')];
-// allNodes.forEach(node => {
-//     let classes = node.classList;
-//     classes.forEach(className => {
-//         if (className) {
-//             usedClasses.add(className);
-//         }
-//     });
-// });
-
-// // چاپ کلاس‌های استفاده شده
-// console.log(Array.from(usedClasses));
